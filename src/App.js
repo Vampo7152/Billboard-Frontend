@@ -36,7 +36,7 @@ const TWITTER_HANDLE = "Kagweishi";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const CONTRACT_ADDRESS = "0xAeDA7D956945d448d2723795Ee072887E26d9F4b";
 const OPENSEA_LINK = `https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/1`;
-const NETWORK = "homestead";
+//const NETWORK = "homestead";
 
 const App = () => {
   const [formData, setFormData] = useState({});
