@@ -32,9 +32,9 @@ const constants = {
   WALLET_CONNECT: "walletconnect",
 };
 
-const TWITTER_HANDLE = "Umang_veerma";
+const TWITTER_HANDLE = "Kagweishi";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const CONTRACT_ADDRESS = "0xA748d13201C646dce206982D8b07a15e905586BF";
+const CONTRACT_ADDRESS = "0xAeDA7D956945d448d2723795Ee072887E26d9F4b";
 const OPENSEA_LINK = `https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/1`;
 const NETWORK = "homestead";
 
@@ -520,7 +520,7 @@ const App = () => {
             <a
               target="_blank"
               href={
-                "https://www.etherscan.io/address/" +
+                "https://rinkeby.etherscan.io/address/" +
                 CONTRACT_ADDRESS +
                 "#writeContract"
               }
