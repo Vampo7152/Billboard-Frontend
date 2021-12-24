@@ -23,7 +23,7 @@ const connectWithWalletConnect = () => {
 
 const wProvider = new WalletConnectProvider({
   rpc: {
-    4: "https://rinkeby.infura.io/v3/901bfc6e5e0042589b3e6d416993bb43",
+    4: "https://eth-rinkeby.alchemyapi.io/v2/snXM9nAmIII5xnQzaQfszYFx7lBnRgNK",
   },
 });
 
@@ -32,9 +32,9 @@ const constants = {
   WALLET_CONNECT: "walletconnect",
 };
 
-const TWITTER_HANDLE = "Kagweishi";
+const TWITTER_HANDLE = "slavcats";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const CONTRACT_ADDRESS = "0xAeDA7D956945d448d2723795Ee072887E26d9F4b";
+const CONTRACT_ADDRESS = "0xA384435C0a70873DA9872f1C5Ae6795e5A4a93A8";
 const OPENSEA_LINK = `https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/1`;
 //const NETWORK = "homestead";
 
@@ -317,7 +317,7 @@ const App = () => {
             className="billboard-container"
             dangerouslySetInnerHTML={{ __html: currentBillboard.svg }}
           />
-          <p>
+          <p className="simple-texts2">
             Last price paid to update:{" "}
             <a
               target="_blank"
@@ -360,7 +360,7 @@ const App = () => {
         ));
       return (
         <>
-          <h2>Previous Billboards</h2> {previousBillboards}{" "}
+          <h2 className="simple-texts">Previous Billboards :</h2> {previousBillboards}{" "}
         </>
       );
     }
@@ -376,8 +376,8 @@ const App = () => {
       return (
         <>
           <form>
-            <label>
-              Price in Ξ <br />
+            <label className="simple-texts">
+              Price in  Ξ  <br />
             </label>
             <input
               min="0"
@@ -398,8 +398,8 @@ const App = () => {
               }}
             />
             <br />
-            <label>
-              First line
+            <label className="simple-texts1">
+              First line  : 
               <br />
             </label>
             <input
@@ -411,8 +411,8 @@ const App = () => {
               id="first-line"
             />
             <br />
-            <label>
-              Second line
+            <label className="simple-texts">
+              Second line : 
               <br />
             </label>
             <input
@@ -424,8 +424,8 @@ const App = () => {
               id="second-line"
             />
             <br />
-            <label>
-              Third line
+            <label className="simple-texts">
+              Third line  : 
               <br />
             </label>
             <input
@@ -498,25 +498,27 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">The Billboard 🏬</p>
+          <p className="header gradient-text"><img src="https://s2.coinmarketcap.com/static/img/coins/200x200/16241.png" className="slav-logo" alt="slaverse"/>The Slav Cat </p>
           <p className="sub-text">
-            The Billboard is an experiment using Ethereum: a text is recorded in
-            the blockchain forever and it's displayed in The Billboard NFT (at
-            least until someone pays more than you). There is only a single
-            token and you can see it in{" "}
-            <a href={OPENSEA_LINK} target="_blank" rel="noreferrer">
+           The Web3 Propaganda by Slav Cat is the First Communist Activity going to happen 
+           completely on-chain, bringing insane meme potential 
+           from Eastern Europe to the rest of the world! Its an experiment
+           for building the strongest Slavic ecosystem to ensure that all
+            brothers can create and spread their "Power To All" ideologies which 
+            can inspire World on {" "}
+            <a href={OPENSEA_LINK} target="_blank" rel="noreferrer" className="main-links">
               OpenSea
             </a>
             .
           </p>
           <p className="sub-text">
-            The Billboard metadata is generated on chain, so even if this
-            website stops working the token will always survive ✨
+            The Propaganda Poster is generated on-chain, so even if the
+           capitalists try to kill our development, our ideologies will always survive ✨
           </p>
-          <p className="sub-text">
-            To update The Billboard you need to pay more than the last paid
-            price. Each line has a limit of 50 bytes (50 standard characters).
-            You can also do it in{" "}
+          <p className="subsub-text">
+            To update The Propaganda Poster you need to pay more than the last paid
+            price, so that best ideology gets featured. Each line has a limit of 50 bytes (50 standard characters).
+            You can also do it on {" "}
             <a
               target="_blank"
               href={
@@ -525,10 +527,11 @@ const App = () => {
                 "#writeContract"
               }
               rel="noreferrer"
+              className="main-links"
             >
               Etherscan
             </a>
-            .
+            . Community Strong Together!🐱
           </p>
           {currentAccount === "" ? renderNotConnectedContainer() : renderForm()}
         </div>
@@ -541,7 +544,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`Built with ❤️ by @${TWITTER_HANDLE}`}</a>
+          >{`Bring the Catnip Comrade! @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
       <WalletModal

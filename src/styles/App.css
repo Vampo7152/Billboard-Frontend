@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
 .App {
   height: 100vh;
-  background-color: #0d1116;
+  background-color: rgb(19, 19, 19);
   overflow: auto;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
   height: 100%;
-  background-color: #0d1116;
+  background-color: rgb(19, 19, 19);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,15 +25,33 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  margin-bottom: 60px;
+  font-family: 'Roboto Mono', monospace;
 }
-
 .sub-text {
-  font-size: 25px;
+  font-size: 22px;
   color: white;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
-
+.subsub-text {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 35px;
+}
+.slav-logo{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-right: 30px;
+  border: 2px solid #ef473a;
+}
+.main-links{
+  text-decoration: none;
+  color: #FED90F;
+}
 .gradient-text {
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background: -webkit-linear-gradient(left, #cb2d3e 30%, #ef473a 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,9 +72,10 @@
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background: -webkit-linear-gradient(left, #ef473a, #cb2d3e);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
+  margin-top: 24px;
 }
 
 .mint-button {
@@ -60,6 +83,7 @@
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-right: 15px;
+
 }
 
 .opensea-button {
@@ -88,8 +112,23 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
+  margin-top: 40px;
 }
-
+.simple-texts{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.simple-texts1{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.simple-texts2{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
   0% {
@@ -132,4 +171,57 @@
 .pointer,
 .pointer * {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    font-size: 34px;
+    margin-right: 10px;
+  }
+  .slav-logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .sub-text {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin:25px 20px ;
+  }
+  .subsub-text {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 35px;
+    margin: 35px 20px;
+  }
+  .simple-texts{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    margin: 7px 8px;
+  }
+  .simple-texts1{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    margin: 7px 8px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+  .simple-texts2{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    margin: 15px 20px;
+    font-size: 15px;
+  }
+  .footer-text {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 5px 2px;
+    margin-top: 20px;
+  }
 }
