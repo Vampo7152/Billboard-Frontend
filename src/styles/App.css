@@ -69,13 +69,15 @@
   font-weight: bold;
   color: white;
   margin: 0.5rem 0;
+  margin-bottom: 20px;
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #ef473a, #cb2d3e);
+  background: -webkit-linear-gradient(left, #FED90F, #cb2d3e);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .mint-button {
