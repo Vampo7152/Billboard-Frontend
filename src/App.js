@@ -498,7 +498,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text"><img src="https://s2.coinmarketcap.com/static/img/coins/200x200/16241.png" className="slav-logo" alt="slaverse"/>The Slav Cat </p>
+          <p className="header gradient-text"><img src="https://gateway.pinata.cloud/ipfs/QmTrR65EGWsrCJkHVC96uFtTsGxtLfi5xqCqmz2FffsY9F?preview=1" className="slav-logo" alt="slaverse"/>The Slav Cat </p>
           <p className="sub-text">
            The Web3 Propaganda by Slav Cat is the First Communist Activity going to happen 
            completely on-chain, bringing insane meme potential 

@@ -40,11 +40,9 @@
   margin-bottom: 35px;
 }
 .slav-logo{
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin-right: 30px;
-  border: 2px solid #ef473a;
 }
 .main-links{
   text-decoration: none;
@@ -181,8 +179,8 @@
     margin-right: 10px;
   }
   .slav-logo{
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     margin-left: 10px;
   }
   .sub-text {
